@@ -118,6 +118,29 @@
     }
   }
 
+  @media screen and (min-width: 1450px) {
+    .projectsPage {
+      &__list {
+        .projects__item {
+          width: 49.5%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          &:nth-child(1) {
+            img {
+              width: auto;
+            }
+          }
+
+          &:nth-child(3n) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
   @media screen and (max-width: 1100px) {
     .header__wrap {
       padding: 32px 56px 24px 54px;

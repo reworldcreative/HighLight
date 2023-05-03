@@ -1232,6 +1232,14 @@
     }
   }
 
+  @media screen and (min-width: 1450px) {
+    .news-item {
+      &__image {
+        width: 100%;
+      }
+    }
+  }
+
   @media screen and (max-width: 1400px) {
     .news-item {
       &__image {

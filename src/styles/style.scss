@@ -2526,7 +2526,8 @@ $main: #ffffff;
   background-image: url("@img/main-footer-bg.jpg");
   // position: absolute;
   background-repeat: no-repeat;
-  background-size: contain;
+  // background-size: contain;
+  background-size: cover;
   &__wrap {
     width: fit-content;
     padding: 119px 13.472% 122px;
@@ -2652,6 +2653,7 @@ $main: #ffffff;
 
 @media screen and (max-width: 1300px) {
   .main-footer {
+    background-size: auto;
     &__info {
       .socials-web {
         margin-left: 100px;
