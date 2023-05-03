@@ -1,0 +1,65 @@
+<div id="menu" class="menu align-items-center w-100">
+    <nav class="navbar menu-navigation  p-0">
+        <a class="logo navbar-brand align-items-center d-flex p-0" href="index.html">
+            Logo
+        </a>
+        <button class="close-btn" id="close-btn">
+            <div>
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </button>
+
+
+        <div class="col buttons">
+            <div class="language">
+                <select class="form-select">
+                    <option selected>En</option>
+                    <option value="1">Ua</option>
+                </select>
+            </div>
+
+            <button class="send-button">Send Request</button>
+        </div>
+    </nav>
+
+    <ul class="navbar-nav menu-navlist p-0">
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link active p-0" href="index.html">Home</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="about.html">About us</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="news.html">Blog</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="contact.html">Contacts</a>
+        </li>
+    </ul>
+
+    <button class="send-button send-button_s">Send Request</button>
+    <div class="hero__footer row">
+
+        @@include('socials.html',{})
+
+
+        <div class="input-group col">
+            <label class="input-group-text"><i class="location__icon bi bi-geo-alt-fill"></i></label>
+            <select class="form-control selectpicker city-select col" data-live-search="true">
+                <option selected value="1" data-tokens="berlin">Berlin</option>
+                <option value="2" data-tokens="kyiv">Kyiv</option>
+                <option value="3" data-tokens="odesa">Odesa</option>
+            </select>
+
+            <span class="input-group-text downarrow"><i class="bi bi-chevron-down"></i></span>
+
+        </div>
+        <div class="contacts col">
+            <a class="phone" href="tel:+380935705222">+380935705222</a>
+            <div class="mail"><a href="mailto:info@hi-light.pl">info@hi-light.pl</a></div>
+        </div>
+    </div>
+</div>

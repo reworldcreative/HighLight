@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Contact"
+})
+
+<body id="contact">
+    @@include('html/preloader.html',{})
+    @@include('html/menu.html',{})
+    @@include('html/header.html',{})
+
+
+    <section class="main-footer container-fluid p-0 m-0">
+
+        <div class="main-footer__wrap">
+            <h2 class="section-title">Drop us a line</h2>
+            <p class="main-footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+                mauris vitae posuere.
+            </p>
+
+            <div class="main-footer__info">
+                <ul class="city-contact__list">
+                    <!-- <li class="city-contact__itam">
+                        <h3 class="city">Kyiv</h3>
+                        <a class="tel" href="tel:+2095550104">(209) 555-0104</a>
+                        <a class="address"
+                            href="https://www.google.com/maps/search/6391+Elgin+St.+Celina,Delaware+10299/@39.143909,-75.9470942,9z/data=!3m1!4b1">
+                            6391 Elgin St. Celina,
+                            Delaware 10299
+                        </a>
+                    </li> -->
+
+                    @@include('html/citycontact.html',{
+                    "city":"Kyiv",
+                    "tel":"(209) 555-0104",
+                    "tel-link":"2095550104",
+                    "address":"6391 Elgin St. Celina, Delaware 10299",
+                    "address-link":"https://www.google.com/maps/search/6391+Elgin+St.+Celina,Delaware+10299/@39.143909,-75.9470942,9z/data=!3m1!4b1",
+                    })
+
+                    @@include('html/citycontact.html',{
+                    "city":"Lviv",
+                    "tel":"(209) 555-0104",
+                    "tel-link":"2095550104",
+                    "address":"6391 Elgin St. Celina, Delaware 10299",
+                    "address-link":"https://www.google.com/maps/search/6391+Elgin+St.+Celina,Delaware+10299/@39.143909,-75.9470942,9z/data=!3m1!4b1",
+                    })
+                    @@include('html/citycontact.html',{
+                    "city":"Kharkiv",
+                    "tel":"(209) 555-0104",
+                    "tel-link":"2095550104",
+                    "address":"6391 Elgin St. Celina, Delaware 10299",
+                    "address-link":"https://www.google.com/maps/search/6391+Elgin+St.+Celina,Delaware+10299/@39.143909,-75.9470942,9z/data=!3m1!4b1",
+                    })
+                </ul>
+
+                <div class="socials-web">
+                    <a class="socials-mail" href="mailto:info@gmail.com">info@gmail.com</a>
+                    @@include('html/socials.html',{})
+                </div>
+            </div>
+
+            @@include('html/requestBtn.html',{})
+        </div>
+        @@include('html/footer.html',{})
+    </section>
+
+    <script src="scripts/main.min.js"></script>
+</body>
+
+</html>

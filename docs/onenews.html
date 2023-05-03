@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230503174930">
+    <title>One News</title>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js?_v=20230503174930"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js?_v=20230503174930"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js?_v=20230503174930"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js?_v=20230503174930"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css?_v=20230503174930" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css?_v=20230503174930"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css?_v=20230503174930">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap&_v=20230503174930"
+        rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230503174930" />
+
+
+    <!-- bootstrap-select-country -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css?_v=20230503174930" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-select@1.12.4/dist/css/bootstrap-select.min.css?_v=20230503174930"
+        type="text/css" />
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css?_v=20230503174930"
+        type="text/css" /> -->
+    <!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js?_v=20230503174930"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js?_v=20230503174930"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css?_v=20230503174930" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js?_v=20230503174930"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css?_v=20230503174930"
+        rel="stylesheet" /> -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css?_v=20230503174930" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js?_v=20230503174930"></script>
+
+
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230503174930">
+    <link rel="stylesheet" href="@@link?_v=20230503174930">
+
+</head>
+
+<body id="onenews">
+    <div class="preloader">
+    <div class="preloader__wrap">
+        <p class="preloader__text">HI 30%</p>
+    </div>
+</div>
+    <div id="menu" class="menu align-items-center w-100">
+    <nav class="navbar menu-navigation  p-0">
+        <a class="logo navbar-brand align-items-center d-flex p-0" href="index.html">
+            Logo
+        </a>
+        <button class="close-btn" id="close-btn">
+            <div>
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </button>
+
+
+        <div class="col buttons">
+            <div class="language">
+                <select class="form-select">
+                    <option selected>En</option>
+                    <option value="1">Ua</option>
+                </select>
+            </div>
+
+            <button class="send-button">Send Request</button>
+        </div>
+    </nav>
+
+    <ul class="navbar-nav menu-navlist p-0">
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link active p-0" href="index.html">Home</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="about.html">About us</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="news.html">Blog</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="contact.html">Contacts</a>
+        </li>
+    </ul>
+
+    <button class="send-button send-button_s">Send Request</button>
+    <div class="hero__footer row">
+
+        <ul class="socials col p-0">
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.facebook.com" target="_blank"
+            rel="noopener noreferrer">Fb</a>
+    </li>
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.instagram.com" target="_blank"
+            rel="noopener noreferrer">In</a>
+    </li>
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.behance.net" target="_blank"
+            rel="noopener noreferrer">Be</a>
+    </li>
+</ul>
+
+
+        <div class="input-group col">
+            <label class="input-group-text"><i class="location__icon bi bi-geo-alt-fill"></i></label>
+            <select class="form-control selectpicker city-select col" data-live-search="true">
+                <option selected value="1" data-tokens="berlin">Berlin</option>
+                <option value="2" data-tokens="kyiv">Kyiv</option>
+                <option value="3" data-tokens="odesa">Odesa</option>
+            </select>
+
+            <span class="input-group-text downarrow"><i class="bi bi-chevron-down"></i></span>
+
+        </div>
+        <div class="contacts col">
+            <a class="phone" href="tel:+380935705222">+380935705222</a>
+            <div class="mail"><a href="mailto:info@hi-light.pl">info@hi-light.pl</a></div>
+        </div>
+    </div>
+</div>
+    <header id='header' class="container-fluid header p-0 d-flex justify-content-start">
+    <div class="header__wrap align-items-center w-100">
+
+        <nav class="navbar navigation navbar-expand-xl navbar-dark p-0">
+            <a class="logo navbar-brand align-items-center d-flex p-0" href="index.html">
+                Logo
+            </a>
+            <div class="d-flex  navigation__collapse">
+                <button id="openmenu" class="navbar-toggler navigation__btn" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div>
+                        <span class="navbar__icon"></span>
+                        <span class="navbar__icon"></span>
+                    </div>
+                    <p class="navbar__text">Menu</p>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex align-items-center navbar-collapse__item">
+                    <ul class="navbar-nav navigation__list p-0">
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="news.html">Blog</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="contact.html">Contacts</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="col buttons">
+                <!-- <button class="language">En</button> -->
+                <div class="language">
+                    <select class="form-select">
+                        <option selected>En</option>
+                        <option value="1">Ua</option>
+                    </select>
+                </div>
+
+                <button class="send-button" data-toggle="modal" data-target="#interierModal">Send Request</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section class="news-item container-fluid p-0 m-0">
+        <div class="news-item__wrap">
+            <div class="text__item">
+                <div class="text-wrap">
+                    <h1 class="onenews-title">Antrax IT - Italian factory for the production</h1>
+                    <p class="onenews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida
+                        urna.
+                        Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam.
+                        Donec
+                        et ipsum nec quam posuere maximus eu in erat. Duis laoreet finibus consectetur. Nullam pulvinar
+                        ex
+                        sit amet leo gravida, sed mattis enim vehicula. Duis purus nisl, consectetur ut est non,
+                        placerat
+                        eleifend turpis. Duis auctor suscipit arcu. Aenean leo est, rutrum a eleifend eget, tempor nec
+                        urna.
+                        Proin finibus lobortis arcu dictum convallis. Ut fermentum eu magna vel laoreet. In lacus augue,
+                        malesuada id elit sit amet,
+                        varius imperdiet ex. Nullam blandit lobortis posuere.</p>
+                </div>
+
+            </div>
+            <div class="share">
+                <p class="share__title">Share:</p>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.facebook.com" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="img/facebook-icon.svg" alt="facebook-icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <img src="img/twitter-icon.svg" alt="twitter-icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="img/linkedin-icon.svg" alt="linkedin-icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="img/link-icon.svg" alt="links-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="news-item__image">
+                <picture><source srcset="img/interier-8-2.webp" type="image/webp"><img src="img/interier-8-2.jpg" alt="interier"></picture>
+            </div>
+
+            <div class="text__item">
+                <div class="text-wrap">
+                    <h2 class="onenews__caption">Donec et ipsum nec quam posuere maximus eu in erat. Duis laoreet
+                        finibus consectetur. </h2>
+                    <p class="onenews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida
+                        urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut
+                        aliquam. Donec et ipsum nec quam posuere maximus eu in erat. Duis laoreet finibus consectetur.
+                        Nullam pulvinar ex sit amet leo gravida, sed mattis enim vehicula. Duis purus nisl, consectetur
+                        ut est non, placerat eleifend turpis. Duis auctor suscipit arcu. Aenean leo est, rutrum a
+                        eleifend eget, tempor nec urna. Proin finibus lobortis arcu dictum convallis. Ut fermentum eu
+                        magna vel laoreet. In lacus augue, malesuada id elit sit amet, varius imperdiet ex. Nullam
+                        blandit lobortis posuere:</p>
+
+                    <ol class="text-list">
+                        <li class="text-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </li>
+                        <li class="text-list__text">Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper
+                            euismod.
+                        </li>
+                        <li class="text-list__text">Nam tempus pellentesque ligula ut aliquam.
+                        </li>
+                        <li class="text-list__text">Donec et ipsum nec quam posuere maximus eu in erat.
+                        </li>
+                        <li class="text-list__text">Duis laoreet finibus consectetur.
+                        </li>
+                    </ol>
+
+                    <p class="onenews__text">Aliquam iaculis ac urna at consequat. Pellentesque fermentum tellus eu nisi
+                        viverra gravida. Sed
+                        suscipit vestibulum accumsan. Sed ac magna id sem hendrerit convallis quis a magna. Mauris eget
+                        ornare est. Morbi metus justo, posuere vel semper semper, eleifend ut purus. Morbi cursus
+                        consequat nibh, a feugiat felis tempor vitae. Interdum et malesuada fames ac ante ipsum primis
+                        in faucibus. Nam sodales orci nisl, in lacinia risus rhoncus a. Praesent consectetur egestas
+                        risus, id consectetur felis.</p>
+                </div>
+            </div>
+
+            <div class="news-item__image">
+                <picture><source srcset="img/interier-4-2.webp" type="image/webp"><img src="img/interier-4-2.jpg" alt="interier"></picture>
+            </div>
+
+            <div class="img-row">
+                <div class="news-item__image">
+                    <picture><source srcset="img/interier-8.webp" type="image/webp"><img src="img/interier-8.jpg" alt="interier"></picture>
+                </div>
+                <div class="news-item__image ">
+                    <picture><source srcset="img/interier-13.webp" type="image/webp"><img src="img/interier-13.jpg" alt="interier"></picture>
+                </div>
+
+            </div>
+
+            <div class="text__item">
+                <div class="text-wrap">
+                    <h2 class="onenews__caption">Duis laoreet finibus consectetur. </h2>
+                    <p class="onenews__text">Duis laoreet finibus consectetur. Nullam pulvinar ex sit amet leo gravida,
+                        sed mattis enim vehicula. Duis purus nisl, consectetur ut est non, placerat eleifend turpis.
+                        Duis auctor suscipit arcu. Aenean leo est, rutrum a eleifend eget, tempor nec urna. Proin
+                        finibus lobortis arcu dictum convallis. Ut fermentum eu magna vel laoreet. In lacus augue,
+                        malesuada id elit sit amet, varius imperdiet ex. Nullam blandit lobortis posuere:</p>
+
+                    <ul class="text-list text-list_ul">
+                        <li class="text-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </li>
+                        <li class="text-list__text">Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper
+                            euismod.
+                        </li>
+                        <li class="text-list__text">Nam tempus pellentesque ligula ut aliquam.
+                        </li>
+                        <li class="text-list__text">Donec et ipsum nec quam posuere maximus eu in erat.
+                        </li>
+                    </ul>
+
+                    <p class="onenews__text">Mauris eget ornare est. Morbi metus justo, posuere vel semper semper,
+                        eleifend ut purus. Morbi cursus consequat nibh, a feugiat felis tempor vitae. Interdum et
+                        malesuada fames ac ante ipsum primis in faucibus. Nam sodales orci nisl, in lacinia risus
+                        rhoncus a. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="latest container-fluid p-0 m-0">
+        <div class="projects__side">blog</div>
+
+        <div class="latest__wrap">
+            <h2 class="section-title">Our latest news</h2>
+
+            <div class="swiper latest-swiper">
+                <ul class="latest__list swiper-wrapper">
+                    <li class="latest__item swiper-slide">
+    <div class="latest__image">
+        <picture><source srcset="img/interier-11.webp" type="image/webp"><img src="img/interier-11.jpg" alt="interier"></picture>
+    </div>
+    <h3 class="latest__caption">Antrax IT - Italian factory for the production of radiators</h3>
+    <p class="latest__date">01 January 2019</p>
+</li>
+                    <li class="latest__item swiper-slide">
+    <div class="latest__image">
+        <picture><source srcset="img/interier-5-3.webp" type="image/webp"><img src="img/interier-5-3.jpg" alt="interier"></picture>
+    </div>
+    <h3 class="latest__caption">Antrax IT - Italian factory for the production of radiators</h3>
+    <p class="latest__date">01 January 2019</p>
+</li>
+                    <li class="latest__item swiper-slide">
+    <div class="latest__image">
+        <picture><source srcset="img/main-img-1.webp" type="image/webp"><img src="img/main-img-1.jpg" alt="interier"></picture>
+    </div>
+    <h3 class="latest__caption">Antrax IT - Italian factory for the production of radiators</h3>
+    <p class="latest__date">01 January 2019</p>
+</li>
+                    <li class="latest__item swiper-slide">
+    <div class="latest__image">
+        <picture><source srcset="img/interier-3.webp" type="image/webp"><img src="img/interier-3.jpg" alt="interier"></picture>
+    </div>
+    <h3 class="latest__caption">Antrax IT - Italian factory for the production of radiators</h3>
+    <p class="latest__date">01 January 2019</p>
+</li>
+                    <!-- <li class="latest__item">
+                    <div class="latest__image">
+                        <picture><source srcset="img/interier-11.webp" type="image/webp"><img src="img/interier-11.jpg" alt="interier"></picture>
+                    </div>
+                    <h3 class="latest__caption">Antrax IT - Italian factory for the production of radiators</h3>
+                    <p class="latest__date">01 January 2019</p>
+                </li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id='footer' class="container-fluid footer p-0">
+    <div class="footer__wrap">
+        <p class="footer__text">© Copyright 2018. All rights reserved</p>
+        <div class="footer__right">
+            <p class="footer__text">Made with love in</p>
+
+            <div class="footer__logo">
+                <p class="first">The First</p>
+                <p class="last">The Last.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230503174930"></script>
+
+    <script src="scripts/main.min.js?_v=20230503174930"></script>
+</body>
+
+</html>

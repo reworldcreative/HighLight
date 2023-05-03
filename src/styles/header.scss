@@ -1,0 +1,265 @@
+$main: #ffffff;
+
+// $grid-float-breakpoint: 1000px;
+
+.header {
+  position: absolute;
+  z-index: 10;
+  &__wrap {
+    padding: 24px 63px 24px 62px;
+  }
+
+  .logo {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 10.82%;
+    // margin-right: 142px;
+    font-size: 14px;
+    // line-height: 17px;
+    // @include font-size(14px);
+    line-height: 1.214;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+    color: $main;
+  }
+
+  .navigation {
+    &__item {
+      margin-right: 48px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+    &__btn {
+      border: none;
+      box-shadow: none;
+      // display: flex;
+      align-items: center;
+      padding: 0px;
+    }
+
+    .navbar {
+      &__icon {
+        height: 1px;
+        background-color: $main;
+        width: 28px;
+        margin-bottom: 5px;
+        display: block;
+        position: relative;
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+
+      &__text {
+        margin-left: 24px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        // line-height: 13px;
+        // @include font-size(11px);
+        line-height: 1.18;
+        margin-bottom: 0px;
+
+        text-align: right;
+        letter-spacing: 0.06em;
+
+        color: $main;
+      }
+    }
+
+    &__link {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      // line-height: 13px;
+      // @include font-size(11px);
+      line-height: 1.18;
+      letter-spacing: 0.06em;
+
+      color: $main !important;
+    }
+  }
+
+  .buttons {
+    justify-content: end;
+    display: flex;
+    padding: 0px;
+  }
+
+  .form-select {
+    padding: 0px;
+    box-shadow: none;
+    option {
+      background-color: transparent;
+      color: black;
+    }
+  }
+
+  .language,
+  .form-select {
+    display: flex;
+    align-items: center;
+    border: none;
+    // background-color: transparent;
+    background: transparent;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    // line-height: 13px;
+    // @include font-size(11px);
+    line-height: 1.18;
+
+    text-align: right;
+    letter-spacing: 0.06em;
+
+    color: $main;
+  }
+
+  .send-button {
+    border: 1px solid rgba(253, 253, 253, 0.32);
+    padding: 17px 48px;
+    // margin-left: 5.7638%;
+    margin-left: 82px;
+    background-color: transparent;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    // line-height: 13px;
+    // @include font-size(11px);
+    line-height: 1.18;
+
+    text-align: right;
+    letter-spacing: 0.06em;
+    color: $main;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .header {
+    &__wrap {
+      padding: 25px 56px 24px 54px;
+    }
+    .logo {
+      margin-right: 97px;
+    }
+    .navigation {
+      &__list {
+        display: contents;
+      }
+      &__btn {
+        display: flex;
+        padding-bottom: 4px;
+      }
+    }
+
+    .send-button {
+      margin-left: 56px;
+      padding: 14px 35px 14px 35px;
+    }
+
+    .navbar-collapse {
+      display: none;
+    }
+
+    .navbar-collapse__item {
+      height: 30px;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__wrap {
+      padding: 25px 48px 24px 48px;
+    }
+
+    .logo {
+      margin-right: 93px;
+    }
+
+    .navigation {
+      &__btn {
+        padding-bottom: 0px;
+      }
+      .navbar__text {
+        margin-left: 22px;
+      }
+    }
+
+    .language {
+      padding-top: 3px;
+    }
+
+    .send-button {
+      margin-left: 55px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    &__wrap {
+      padding: 21px 24px 21px 24px;
+    }
+
+    .navigation {
+      &__collapse {
+        order: 1;
+      }
+
+      &__btn {
+        padding-top: 2px;
+      }
+    }
+
+    .navbar {
+      &__text {
+        display: none;
+      }
+    }
+
+    .language {
+      margin-right: 54px;
+    }
+
+    .send-button {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    .navigation {
+      &__item {
+        margin-right: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    .navbar-collapse {
+      height: 50px;
+    }
+    .navigation {
+      &__list {
+        display: block;
+      }
+    }
+
+    .language {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,338 @@
+.menu {
+  background: rgba(8, 8, 8, 0.98);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  overflow: scroll;
+  display: none;
+
+  .menu-navigation {
+    // margin: 32px 56px 0px;
+    margin: 32px 56px 0px 54px;
+  }
+
+  .logo {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 92px;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  .close-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 27px;
+  }
+
+  .buttons {
+    justify-content: end;
+    display: flex;
+    padding: 0px;
+  }
+
+  .form-select {
+    padding: 0px;
+    box-shadow: none;
+    option {
+      background-color: transparent;
+      color: black;
+    }
+  }
+
+  .language,
+  .form-select {
+    display: flex;
+    align-items: center;
+    border: none;
+    // background-color: transparent;
+    background: transparent;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    // line-height: 13px;
+    // @include font-size(11px);
+    line-height: 1.18;
+
+    text-align: right;
+    letter-spacing: 0.06em;
+
+    color: #ffffff;
+  }
+
+  .send-button {
+    border: 1px solid rgba(253, 253, 253, 0.32);
+    padding: 14px 34px 14px 36px;
+    // margin-left: 5.7638%;
+    margin-left: 55px;
+    background-color: transparent;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    // line-height: 13px;
+    // @include font-size(11px);
+    line-height: 1.18;
+
+    text-align: right;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+
+    &_s {
+      display: none;
+    }
+  }
+
+  .menu-navlist {
+    margin-top: 138px;
+    margin-left: 211px;
+    margin-bottom: 160px;
+    .navigation {
+      &__item {
+        // margin-bottom: 41px;
+        margin-bottom: 34px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+      &__link {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+
+        color: #ffffff;
+
+        opacity: 0.5;
+
+        &.active {
+          opacity: 1;
+        }
+
+        &:active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .input-group {
+    z-index: 10;
+    margin-left: 121px;
+    padding: 5px 13px 5px 12px;
+
+    background-color: transparent;
+    background: none;
+    border: none;
+
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1.15336px 1.22544px rgba(0, 0, 0, 0.2),
+      inset 0px -0.288339px 0.0720847px rgba(255, 255, 255, 0.23);
+    // backdrop-filter: blur(1px);
+
+    border-radius: 8.70783px;
+  }
+
+  .form-control {
+    height: auto !important;
+    padding-right: 31px !important;
+    box-shadow: none;
+    // appearance: none;
+    // background-color: transparent;
+    // border: none;
+
+    option {
+      background: rgba(255, 255, 255, 0.5);
+      color: black;
+    }
+  }
+
+  .form-select,
+  .form-control {
+    // z-index: 10;
+    // margin-left: 121px;
+    // padding: 5px 13px 5px 12px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    // @include font-size(11px);
+    // line-height: 13px;
+    line-height: 1.18;
+    letter-spacing: 0.06em;
+
+    color: $main;
+  }
+
+  .form-select,
+  .form-control,
+  .input-group-text {
+    padding: 0px;
+    background-color: transparent;
+    // background: none;
+    border: none;
+  }
+
+  .input-group-text {
+    margin-right: 7.38px;
+  }
+
+  .location__icon {
+    display: flex;
+    align-items: center;
+    &::before {
+      color: $main;
+      font-size: 10px;
+    }
+  }
+
+  .downarrow {
+    margin-right: 0px;
+    // margin-left: 31px !important;
+    font-size: 7px;
+    color: $main;
+  }
+
+  .contacts {
+    z-index: 10;
+    display: flex;
+    padding: 0px;
+    margin-left: 72px;
+
+    .mail,
+    .mail a,
+    .phone {
+      display: flex;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      // line-height: 13px;
+      // @include font-size(11px);
+      line-height: 1.18;
+      letter-spacing: 0.06em;
+
+      color: $main;
+    }
+    .phone {
+      margin-right: 31px;
+    }
+  }
+
+  .hero__footer {
+    // bottom: 40px;
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 40px;
+  }
+
+  .mail {
+    a {
+      width: max-content;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    .menu-navigation {
+      margin: 24px 48px 0px 48px;
+    }
+
+    .menu-navlist {
+      margin-left: 188px;
+      // margin-top: 288px;
+      // margin-bottom: 282px;
+      margin-top: 28.125vh;
+      margin-bottom: 27.5390625vh;
+    }
+
+    .logo {
+      margin-right: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    .menu-navigation {
+      margin: 14px 18px 0px 24px;
+    }
+    .menu-navlist {
+      text-align: center;
+      width: fit-content;
+      margin-left: 126px;
+      margin-top: 105px;
+      margin-bottom: 49px;
+
+      .navigation__link {
+        font-size: 26px;
+        line-height: 32px;
+      }
+
+      .navigation__item {
+        margin-bottom: 28px;
+      }
+    }
+    .socials {
+      display: none;
+    }
+
+    .hero__footer {
+      left: 0;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 24px;
+      .input-group {
+        margin-left: 0px;
+      }
+
+      .selectpicker {
+        max-width: 100%;
+      }
+
+      .input-group {
+        max-width: fit-content;
+      }
+
+      .contacts {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: end;
+
+        .phone {
+          margin-right: 0px !important;
+        }
+      }
+    }
+
+    .send-button {
+      display: none;
+
+      &_s {
+        display: block;
+
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 99px;
+      }
+    }
+
+    .close-btn {
+      margin-left: 48px;
+      order: 1;
+    }
+  }
+}

@@ -1,0 +1,163 @@
+<div class="modal" id="interierModal" tabindex="-1" role="dialog" aria-labelledby="interierModal" aria-hidden="true">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+    </button>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal__wrap">
+                <div class="modal-header">
+                    <h5 class="modal-title">Calculate the cost of work</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="modal__form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="NameInputModal" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="LastnameInputModal" placeholder="Last name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="PhoneInputModal" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="CityInputModal" placeholder="Your city">
+                        </div>
+
+                        <!-- <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div> -->
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="EmailInputModal" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select" aria-label="Property type">
+                                <option selected>Property type</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <span class="form-select-icon"><i class="bi bi-chevron-down"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="CommentInputModal" placeholder="Your comment">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="modal__footer">
+                <div class="area">
+                    <p class="area__text">Area (m2)</p>
+                    <div class="range">
+                        <ul class="range__list">
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range1" value="range1" name="range">
+                                <label for="range1">to 50</label>
+
+                            </li>
+                            <li class="range__marker active">
+
+                                <input class="range__radio" type="radio" id="range2" name="range" value="range2"
+                                    checked>
+                                <label for="range2">50-150</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range3" name="range" value="range3">
+                                <label for="range3">150-250</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range4" name="range" value="range4">
+                                <label for="range4">250-400</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range5" name="range" value="range5">
+                                <label for="range5">400-600</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range6" name="range" value="range6">
+                                <label for="range6">600-800</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range7" name="range" value="range7">
+                                <label for="range7">800-1000</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range8" name="range" value="range8">
+                                <label for="range8">1000+</label>
+
+                            </li>
+                        </ul>
+                        <input type="range" class="form-range" id="modalRange" data-provide="slider"
+                            data-slider-ticks="[1, 2, 3,4,5,6,7,8]"
+                            data-slider-ticks-labels='["to 50", "50-150", "150-250", "250-400", "400-600", "600-800", "800-1000", "1000+"]'
+                            data-slider-min="1" data-slider-max="8" data-slider-step="1" data-slider-value="2"
+                            data-slider-tooltip="hide">
+
+                    </div>
+                </div>
+                <div class="modal__footer_row">
+                    <div class="form-group filePicker__group">
+                        <label class="filePicker">
+                            <span class="filePicker__icon">+</span>
+                            <input type="file" class="form-control" id="FileInputModal" hidden>
+                        </label>
+
+                        <div>
+                            <p class="filePicker__text">Attach your file</p>
+                            <p class="filePicker__lable">File size not more than 10 MB</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="form-submit" data-dismiss="modal">Send
+                        Request</button>
+                </div>
+
+                <p class="modal__text">It is a long established fact that a reader will be distracted by the readable
+                    content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal successModal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+    aria-hidden="true">
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+    </button>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Thank you for your message!</h5>
+            </div>
+            <div class="modal-body">
+                <p class="success__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+                    mauris vitae posuere.
+                    Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- <form action="submit">
+                    <button type="submit" class="btn btn-primary">Send again</button>
+                </form> -->
+                <button type="button" class="submit-btn" data-bs-dismiss="modal">Send again</button>
+            </div>
+        </div>
+    </div>
+</div>

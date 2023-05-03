@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230503174930">
+    <title>News</title>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js?_v=20230503174930"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js?_v=20230503174930"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js?_v=20230503174930"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js?_v=20230503174930"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css?_v=20230503174930" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css?_v=20230503174930"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css?_v=20230503174930">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap&_v=20230503174930"
+        rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230503174930" />
+
+
+    <!-- bootstrap-select-country -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css?_v=20230503174930" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-select@1.12.4/dist/css/bootstrap-select.min.css?_v=20230503174930"
+        type="text/css" />
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css?_v=20230503174930"
+        type="text/css" /> -->
+    <!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js?_v=20230503174930"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js?_v=20230503174930"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css?_v=20230503174930" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js?_v=20230503174930"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css?_v=20230503174930"
+        rel="stylesheet" /> -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css?_v=20230503174930" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js?_v=20230503174930"></script>
+
+
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230503174930">
+    <link rel="stylesheet" href="@@link?_v=20230503174930">
+
+</head>
+
+<body id="news">
+    <div class="preloader">
+    <div class="preloader__wrap">
+        <p class="preloader__text">HI 30%</p>
+    </div>
+</div>
+    <div id="menu" class="menu align-items-center w-100">
+    <nav class="navbar menu-navigation  p-0">
+        <a class="logo navbar-brand align-items-center d-flex p-0" href="index.html">
+            Logo
+        </a>
+        <button class="close-btn" id="close-btn">
+            <div>
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </button>
+
+
+        <div class="col buttons">
+            <div class="language">
+                <select class="form-select">
+                    <option selected>En</option>
+                    <option value="1">Ua</option>
+                </select>
+            </div>
+
+            <button class="send-button">Send Request</button>
+        </div>
+    </nav>
+
+    <ul class="navbar-nav menu-navlist p-0">
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link active p-0" href="index.html">Home</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="about.html">About us</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="news.html">Blog</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="contact.html">Contacts</a>
+        </li>
+    </ul>
+
+    <button class="send-button send-button_s">Send Request</button>
+    <div class="hero__footer row">
+
+        <ul class="socials col p-0">
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.facebook.com" target="_blank"
+            rel="noopener noreferrer">Fb</a>
+    </li>
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.instagram.com" target="_blank"
+            rel="noopener noreferrer">In</a>
+    </li>
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.behance.net" target="_blank"
+            rel="noopener noreferrer">Be</a>
+    </li>
+</ul>
+
+
+        <div class="input-group col">
+            <label class="input-group-text"><i class="location__icon bi bi-geo-alt-fill"></i></label>
+            <select class="form-control selectpicker city-select col" data-live-search="true">
+                <option selected value="1" data-tokens="berlin">Berlin</option>
+                <option value="2" data-tokens="kyiv">Kyiv</option>
+                <option value="3" data-tokens="odesa">Odesa</option>
+            </select>
+
+            <span class="input-group-text downarrow"><i class="bi bi-chevron-down"></i></span>
+
+        </div>
+        <div class="contacts col">
+            <a class="phone" href="tel:+380935705222">+380935705222</a>
+            <div class="mail"><a href="mailto:info@hi-light.pl">info@hi-light.pl</a></div>
+        </div>
+    </div>
+</div>
+    <header id='header' class="container-fluid header p-0 d-flex justify-content-start">
+    <div class="header__wrap align-items-center w-100">
+
+        <nav class="navbar navigation navbar-expand-xl navbar-dark p-0">
+            <a class="logo navbar-brand align-items-center d-flex p-0" href="index.html">
+                Logo
+            </a>
+            <div class="d-flex  navigation__collapse">
+                <button id="openmenu" class="navbar-toggler navigation__btn" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div>
+                        <span class="navbar__icon"></span>
+                        <span class="navbar__icon"></span>
+                    </div>
+                    <p class="navbar__text">Menu</p>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex align-items-center navbar-collapse__item">
+                    <ul class="navbar-nav navigation__list p-0">
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="news.html">Blog</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="contact.html">Contacts</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="col buttons">
+                <!-- <button class="language">En</button> -->
+                <div class="language">
+                    <select class="form-select">
+                        <option selected>En</option>
+                        <option value="1">Ua</option>
+                    </select>
+                </div>
+
+                <button class="send-button" data-toggle="modal" data-target="#interierModal">Send Request</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section class="news container-fluid p-0 m-0">
+        <div class="news__wrap">
+            <div class="d-flex navigation__wrap">
+                <h2 class="section-title">Our latest news</h2>
+
+                <div class="dropdown news-dropdown">
+                    <button class="news-dropdown-btn btn btn-secondary dropdown-toggle" type="button"
+                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Apartments
+
+                        <!-- <span class="dropdown__icon"><img src="img/downarrow.svg" alt="downarrow"></span> -->
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item news-dropdown-item" id="ex1-tab-1" data-toggle="tab" href="#ex1-tabs-1"
+                            role="tab" aria-controls="ex1-tabs-1" aria-selected="true">All</a>
+                        <a class="dropdown-item news-dropdown-item" id="ex1-tab-2" data-toggle="tab" href="#ex1-tabs-2"
+                            role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Blog</a>
+                        <a class="dropdown-item news-dropdown-item" id="ex1-tab-3" data-toggle="tab" href="#ex1-tabs-3"
+                            role="tab" aria-controls="ex1-tabs-3" aria-selected="false">News</a>
+                        <a class="dropdown-item news-dropdown-item" id="ex1-tab-4" data-toggle="tab" href="#ex1-tabs-4"
+                            role="tab" aria-controls="ex1-tabs-4" aria-selected="false">Advice from the designer</a>
+                    </div>
+                </div>
+
+                <ul class="nav nav-tabs" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="ex1-tab-1" data-toggle="tab" href="#ex1-tabs-1" role="tab"
+                            aria-controls="ex1-tabs-1" aria-selected="true">All</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-2" data-toggle="tab" href="#ex1-tabs-2" role="tab"
+                            aria-controls="ex1-tabs-2" aria-selected="false">Blog</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-3" data-toggle="tab" href="#ex1-tabs-3" role="tab"
+                            aria-controls="ex1-tabs-3" aria-selected="false">News</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-4" data-toggle="tab" href="#ex1-tabs-4" role="tab"
+                            aria-controls="ex1-tabs-4" aria-selected="false">Advice from the designer</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex1-content">
+                <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                    <div class="tab-content" id="pages-content">
+                        <div class="tab-pane fade show active" id="pages-tabs-1" role="tabpanel"
+                            aria-labelledby="pages-tab-1">
+                            <ul class="news__list">
+                                <li class="news__item news__item_l row">
+                                    <a href="onenews.html" class="col-6 order-2 order-sm-1 news__text-wrap">
+                                        <h3 class="news__title">5 smart tips for productive collaboration with the
+                                            designer</h3>
+                                        <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Cras vel
+                                            gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus
+                                            pellentesque
+                                            ligula ut aliquam.</p>
+
+                                        <button class="discover-btn">Discover more</button>
+                                    </a>
+                                    <div class="col-6 p-0 news__image order-1 order-sm-2">
+                                        <picture><source srcset="img/interier-7-3.webp" type="image/webp"><img src="img/interier-7-3.jpg" alt="interier"></picture>
+                                    </div>
+                                </li>
+                                <div class="row p-0 m-0 w-100">
+                                    <li class="news__item news__item_t col-6 p-0">
+                                        <div class=" news__image">
+                                            <p class="news__discription">Non-standard plinth options</p>
+                                            <picture><source srcset="img/interier-5-3.webp" type="image/webp"><img src="img/interier-5-3.jpg" alt="interier"></picture>
+                                        </div>
+                                    </li>
+                                    <li class="news__item news__item_f col-6 p-0">
+                                        <div class=" news__image">
+                                            <p class="news__discription">Interior design, LCD Rybalsky</p>
+                                            <picture><source srcset="img/interier-3-3.webp" type="image/webp"><img src="img/interier-3-3.jpg" alt="interier"></picture>
+                                        </div>
+                                    </li>
+                                </div>
+
+                                <li class="news__item news__item_l row">
+                                    <div class="col-6 p-0 news__image">
+                                        <picture><source srcset="img/interier-7-3.webp" type="image/webp"><img src="img/interier-7-3.jpg" alt="interier"></picture>
+                                    </div>
+                                    <div class="col-6 news__text-wrap">
+                                        <h3 class="news__title">5 smart tips for productive collaboration with the
+                                            designer</h3>
+                                        <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Cras vel
+                                            gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus
+                                            pellentesque
+                                            ligula ut aliquam.</p>
+
+                                        <button class="discover-btn">Discover more</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="pages-tabs-2" role="tabpanel" aria-labelledby="pages-tab-2">
+                            pages 2 content
+                        </div>
+                        <div class="tab-pane fade" id="pages-tabs-3" role="tabpanel" aria-labelledby="pages-tab-3">
+                            pages 3 content
+                        </div>
+                    </div>
+
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination nav nav-tabs" id="page" role="tablist">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <!-- <span aria-hidden="true">&larr;</span> -->
+                                    <span class="prew" aria-hidden="true"><img src="img/arrow.svg" alt="arrow"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item" role="presentation"><a class="page-link" id="pages-tab-1"
+                                    data-toggle="tab" href="#pages-tabs-1" role="tab" aria-controls="pages-tabs-1"
+                                    aria-selected="true">01</a></li>
+                            <li class="page-item" role="presentation"><a class="page-link" id="pages-tab-2"
+                                    data-toggle="tab" href="#pages-tabs-2" role="tab" aria-controls="pages-tabs-2"
+                                    aria-selected="false">02</a></li>
+                            <li class="page-item"><a class="page-link" id="pages-tab-3" data-toggle="tab"
+                                    href="#pages-tabs-3" role="tab" aria-controls="pages-tabs-3"
+                                    aria-selected="false">03</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">15</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <!-- <span aria-hidden="true">&rarr;</span> -->
+                                    <span class="next" aria-hidden="true"><img src="img/arrow.svg" alt="arrow"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                    Tab 2 content
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                    Tab 3 content
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+                    Tab 4 content
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mail container-fluid p-0 m-0">
+        <div class="mail__wrap">
+
+            <h2 class="mail__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <div class="text__wrap">
+                <p class="mail__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+                    mauris
+                    vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam.</p>
+                <div class="input-group email">
+                    <div class="email__wrap">
+                        <input type="email" class="form-control email-control" placeholder="Email" aria-label="Email"
+                            aria-describedby="basic-addon1">
+
+                        <img class="email__img" src="img/arrow.svg" alt="arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id='footer' class="container-fluid footer p-0">
+    <div class="footer__wrap">
+        <p class="footer__text">© Copyright 2018. All rights reserved</p>
+        <div class="footer__right">
+            <p class="footer__text">Made with love in</p>
+
+            <div class="footer__logo">
+                <p class="first">The First</p>
+                <p class="last">The Last.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    </section>
+
+    <script src="scripts/main.min.js?_v=20230503174930"></script>
+</body>
+
+</html>

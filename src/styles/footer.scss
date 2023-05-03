@@ -1,0 +1,123 @@
+$main: #ffffff;
+// $grid-float-breakpoint: 1000px;
+
+.footer {
+  font-family: "Montserrat";
+  font-style: normal;
+
+  &__wrap {
+    padding: 0px 64px 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // font-weight: 300;
+    // font-size: 12px;
+    // line-height: 18px;
+    // // @include font-size(12px);
+    // line-height: 1.5;
+    // color: #828282;
+    // margin-bottom: 0px;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+
+    line-height: 1.5;
+    // @include font-size(12px);
+
+    color: #828282;
+    margin-bottom: 0px;
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  &__logo {
+    margin-left: 26px;
+    .first {
+      font-family: "Adieu";
+      font-style: italic;
+      font-weight: 400;
+      font-size: 12.6864px;
+      line-height: 80%;
+
+      color: $main;
+      margin-bottom: 0px;
+      left: -1px;
+      top: -3px;
+      position: relative;
+      margin-bottom: -1px;
+    }
+    .last {
+      font-family: "FreightBigProLight-Italic";
+      font-size: 15.2236px;
+      line-height: 80%;
+      color: $main;
+      margin-bottom: 0px;
+      text-align: end;
+      margin-left: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    &__wrap {
+      padding: 0px 56px 32px 58px;
+    }
+
+    &__right {
+      bottom: 3px;
+      position: relative;
+    }
+    &__logo {
+      margin-left: 34px;
+      .first {
+        left: -5px;
+        top: -3px;
+      }
+
+      .last {
+        left: -2px;
+        position: relative;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    &__wrap {
+      padding: 0px 48px 24px;
+    }
+
+    &__logo {
+      .first {
+        left: -4px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    &__wrap {
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 0px 125px 24px 24px;
+    }
+
+    &__right {
+      margin-left: 5px;
+    }
+
+    &_logo {
+      margin-left: 33px;
+      .last {
+        left: -7px;
+      }
+    }
+  }
+}

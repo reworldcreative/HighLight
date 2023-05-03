@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"404"
+})
+
+<body id="error">
+    @@include('html/preloader.html',{})
+    @@include('html/menu.html',{})
+    @@include('html/header.html',{})
+
+    <section class="error container-fluid p-0 m-0">
+        <div class="projects__side">404</div>
+        <div class="error__wrap">
+            <h2 class="section-title">Page not found</h2>
+            <p class="error__text">Something went wrong. Page not found</p>
+            <a class="error__back" href="index.html">go to main</a>
+        </div>
+        @@include('html/footer.html',{})
+    </section>
+
+    <script src="scripts/main.min.js"></script>
+</body>
+
+</html>

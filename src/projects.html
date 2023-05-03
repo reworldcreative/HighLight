@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Projects"
+})
+
+<body id="projects">
+    @@include('html/preloader.html',{})
+    @@include('html/menu.html',{})
+    @@include('html/header.html',{})
+    <section class="projectsPage container-fluid p-0 m-0">
+        <div class="projectsPage__wrap">
+            <div class="text-wrap">
+                <h2 class="section-title">Our Projects</h2>
+                <div class="navigate">
+                    <p class="projectsPage__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                        ullamcorper eu mauris vitae posuere. Ut
+                        at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+
+                    <ul class="nav nav-tabs" id="projects-list" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="projects-list-tab-1" data-toggle="tab"
+                                href="#projects-list-tabs-1" role="tab" aria-controls="projects-list-tabs-1"
+                                aria-selected="true">House</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="projects-list-tab-2" data-toggle="tab" href="#projects-list-tabs-2"
+                                role="tab" aria-controls="projects-list-tabs-2" aria-selected="false">Apartments</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="projects-list-tab-3" data-toggle="tab" href="#projects-list-tabs-3"
+                                role="tab" aria-controls="projects-list-tabs-3" aria-selected="false">Commerce</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="projects-list-tab-4" data-toggle="tab" href="#projects-list-tabs-4"
+                                role="tab" aria-controls="projects-list-tabs-4" aria-selected="false">Architecture</a>
+                        </li>
+                    </ul>
+
+                    <div class="dropdown projects-dropdown">
+                        <button class="projects-dropdown-btn btn btn-secondary dropdown-toggle" type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Apartments
+
+                            <!-- <span class="dropdown__icon"><img src="@img/downarrow.svg" alt="downarrow"></span> -->
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item projects-dropdown-item" id="projects-list-tab-1" data-toggle="tab"
+                                href="#projects-list-tabs-1" role="tab" aria-controls="projects-list-tabs-1"
+                                aria-selected="true">House</a>
+                            <a class="dropdown-item projects-dropdown-item" id="projects-list-tab-2" data-toggle="tab"
+                                href="#projects-list-tabs-2" role="tab" aria-controls="projects-list-tabs-2"
+                                aria-selected="false">Apartments</a>
+                            <a class="dropdown-item projects-dropdown-item" id="projects-list-tab-3" data-toggle="tab"
+                                href="#projects-list-tabs-3" role="tab" aria-controls="projects-list-tabs-3"
+                                aria-selected="false">Commerce</a>
+                            <a class="dropdown-item projects-dropdown-item" id="projects-list-tab-4" data-toggle="tab"
+                                href="#projects-list-tabs-4" role="tab" aria-controls="projects-list-tabs-4"
+                                aria-selected="false">Architecture</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="projects-list-content">
+                <div class="tab-pane fade show active" id="projects-list-tabs-1" role="tabpanel"
+                    aria-labelledby="projects-list-tab-1">
+                    <ul class="projectsPage__list">
+                        @@include('html/interiorItem.html',{
+                        "text":"Lodz",
+                        "date":"16.10.2018",
+                        "size":"80 sq.m",
+                        "image":"@img/main-img-1.jpg",
+                        "discription":"Eyewear store interior",
+                        "discription2":"",
+                        })
+                        @@include('html/interiorItem.html',{
+                        "text":"Lodz",
+                        "date":"16.10.2018",
+                        "size":"80 sq.m",
+                        "image":"@img/interier-6.jpg",
+                        "discription":"Minimalist style home",
+                        "discription2":"Residence by the lighthouse",
+                        })
+                        @@include('html/interiorItem.html',{
+                        "text":"Lodz",
+                        "date":"16.10.2018",
+                        "size":"80 sq.m",
+                        "image":"@img/interier-7.jpg",
+                        "discription":"Residence by the lighthouse",
+                        "discription2":"",
+                        })
+                        @@include('html/interiorItem.html',{
+                        "text":"Lodz",
+                        "date":"16.10.2018",
+                        "size":"80 sq.m",
+                        "image":"@img/interier-8.jpg",
+                        "discription":"Eyewear store interior",
+                        "discription2":"",
+                        })
+                        @@include('html/interiorItem.html',{
+                        "text":"Lodz",
+                        "date":"16.10.2018",
+                        "size":"80 sq.m",
+                        "image":"@img/interier-14.jpg",
+                        "discription":"Eyewear store interior",
+                        "discription2":"",
+                        })
+                        @@include('html/interiorItem.html',{
+                        "text":"Lodz",
+                        "date":"16.10.2018",
+                        "size":"80 sq.m",
+                        "image":"@img/interier-12-2.jpg",
+                        "discription":"Residence by the lighthouse",
+                        "discription2":"",
+                        })
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="projects-list-tabs-2" role="tabpanel"
+                    aria-labelledby="projects-list-tab-2">
+                    Tab 2 content
+                </div>
+                <div class="tab-pane fade" id="projects-list-tabs-3" role="tabpanel"
+                    aria-labelledby="projects-list-tab-3">
+                    Tab 3 content
+                </div>
+                <div class="tab-pane fade" id="projects-list-tabs-4" role="tabpanel"
+                    aria-labelledby="projects-list-tab-4">
+                    Tab 4 content
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('html/request.html',{})
+
+    @@include('html/footer.html',{})
+    <script src="scripts/main.min.js"></script>
+</body>
+
+</html>

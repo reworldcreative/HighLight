@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230503174930">
+    <title>Mainpage</title>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js?_v=20230503174930"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js?_v=20230503174930"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js?_v=20230503174930"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js?_v=20230503174930"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css?_v=20230503174930" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css?_v=20230503174930"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css?_v=20230503174930">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap&_v=20230503174930"
+        rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230503174930" />
+
+
+    <!-- bootstrap-select-country -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css?_v=20230503174930" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-select@1.12.4/dist/css/bootstrap-select.min.css?_v=20230503174930"
+        type="text/css" />
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css?_v=20230503174930"
+        type="text/css" /> -->
+    <!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js?_v=20230503174930"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js?_v=20230503174930"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css?_v=20230503174930" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js?_v=20230503174930"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css?_v=20230503174930"
+        rel="stylesheet" /> -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css?_v=20230503174930" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js?_v=20230503174930"></script>
+
+
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230503174930">
+    <link rel="stylesheet" href="@@link?_v=20230503174930">
+
+</head>
+
+<body>
+    
+    <div id="menu" class="menu align-items-center w-100">
+    <nav class="navbar menu-navigation  p-0">
+        <a class="logo navbar-brand align-items-center d-flex p-0" href="index.html">
+            Logo
+        </a>
+        <button class="close-btn" id="close-btn">
+            <div>
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </button>
+
+
+        <div class="col buttons">
+            <div class="language">
+                <select class="form-select">
+                    <option selected>En</option>
+                    <option value="1">Ua</option>
+                </select>
+            </div>
+
+            <button class="send-button">Send Request</button>
+        </div>
+    </nav>
+
+    <ul class="navbar-nav menu-navlist p-0">
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link active p-0" href="index.html">Home</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="about.html">About us</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="news.html">Blog</a>
+        </li>
+        <li class="nav-item navigation__item">
+            <a class="nav-link navigation__link p-0" href="contact.html">Contacts</a>
+        </li>
+    </ul>
+
+    <button class="send-button send-button_s">Send Request</button>
+    <div class="hero__footer row">
+
+        <ul class="socials col p-0">
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.facebook.com" target="_blank"
+            rel="noopener noreferrer">Fb</a>
+    </li>
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.instagram.com" target="_blank"
+            rel="noopener noreferrer">In</a>
+    </li>
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.behance.net" target="_blank"
+            rel="noopener noreferrer">Be</a>
+    </li>
+</ul>
+
+
+        <div class="input-group col">
+            <label class="input-group-text"><i class="location__icon bi bi-geo-alt-fill"></i></label>
+            <select class="form-control selectpicker city-select col" data-live-search="true">
+                <option selected value="1" data-tokens="berlin">Berlin</option>
+                <option value="2" data-tokens="kyiv">Kyiv</option>
+                <option value="3" data-tokens="odesa">Odesa</option>
+            </select>
+
+            <span class="input-group-text downarrow"><i class="bi bi-chevron-down"></i></span>
+
+        </div>
+        <div class="contacts col">
+            <a class="phone" href="tel:+380935705222">+380935705222</a>
+            <div class="mail"><a href="mailto:info@hi-light.pl">info@hi-light.pl</a></div>
+        </div>
+    </div>
+</div>
+    <header id='header' class="container-fluid header p-0 d-flex justify-content-start">
+    <div class="header__wrap align-items-center w-100">
+
+        <nav class="navbar navigation navbar-expand-xl navbar-dark p-0">
+            <a class="logo navbar-brand align-items-center d-flex p-0" href="index.html">
+                Logo
+            </a>
+            <div class="d-flex  navigation__collapse">
+                <button id="openmenu" class="navbar-toggler navigation__btn" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div>
+                        <span class="navbar__icon"></span>
+                        <span class="navbar__icon"></span>
+                    </div>
+                    <p class="navbar__text">Menu</p>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex align-items-center navbar-collapse__item">
+                    <ul class="navbar-nav navigation__list p-0">
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="news.html">Blog</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="contact.html">Contacts</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="col buttons">
+                <!-- <button class="language">En</button> -->
+                <div class="language">
+                    <select class="form-select">
+                        <option selected>En</option>
+                        <option value="1">Ua</option>
+                    </select>
+                </div>
+
+                <button class="send-button" data-toggle="modal" data-target="#interierModal">Send Request</button>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="modal" id="interierModal" tabindex="-1" role="dialog" aria-labelledby="interierModal" aria-hidden="true">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+    </button>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal__wrap">
+                <div class="modal-header">
+                    <h5 class="modal-title">Calculate the cost of work</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="modal__form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="NameInputModal" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="LastnameInputModal" placeholder="Last name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="PhoneInputModal" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="CityInputModal" placeholder="Your city">
+                        </div>
+
+                        <!-- <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div> -->
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="EmailInputModal" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select" aria-label="Property type">
+                                <option selected>Property type</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <span class="form-select-icon"><i class="bi bi-chevron-down"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="CommentInputModal" placeholder="Your comment">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="modal__footer">
+                <div class="area">
+                    <p class="area__text">Area (m2)</p>
+                    <div class="range">
+                        <ul class="range__list">
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range1" value="range1" name="range">
+                                <label for="range1">to 50</label>
+
+                            </li>
+                            <li class="range__marker active">
+
+                                <input class="range__radio" type="radio" id="range2" name="range" value="range2"
+                                    checked>
+                                <label for="range2">50-150</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range3" name="range" value="range3">
+                                <label for="range3">150-250</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range4" name="range" value="range4">
+                                <label for="range4">250-400</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range5" name="range" value="range5">
+                                <label for="range5">400-600</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range6" name="range" value="range6">
+                                <label for="range6">600-800</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range7" name="range" value="range7">
+                                <label for="range7">800-1000</label>
+
+                            </li>
+                            <li class="range__marker">
+
+                                <input class="range__radio" type="radio" id="range8" name="range" value="range8">
+                                <label for="range8">1000+</label>
+
+                            </li>
+                        </ul>
+                        <input type="range" class="form-range" id="modalRange" data-provide="slider"
+                            data-slider-ticks="[1, 2, 3,4,5,6,7,8]"
+                            data-slider-ticks-labels='["to 50", "50-150", "150-250", "250-400", "400-600", "600-800", "800-1000", "1000+"]'
+                            data-slider-min="1" data-slider-max="8" data-slider-step="1" data-slider-value="2"
+                            data-slider-tooltip="hide">
+
+                    </div>
+                </div>
+                <div class="modal__footer_row">
+                    <div class="form-group filePicker__group">
+                        <label class="filePicker">
+                            <span class="filePicker__icon">+</span>
+                            <input type="file" class="form-control" id="FileInputModal" hidden>
+                        </label>
+
+                        <div>
+                            <p class="filePicker__text">Attach your file</p>
+                            <p class="filePicker__lable">File size not more than 10 MB</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="form-submit" data-dismiss="modal">Send
+                        Request</button>
+                </div>
+
+                <p class="modal__text">It is a long established fact that a reader will be distracted by the readable
+                    content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal successModal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+    aria-hidden="true">
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+    </button>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Thank you for your message!</h5>
+            </div>
+            <div class="modal-body">
+                <p class="success__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+                    mauris vitae posuere.
+                    Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- <form action="submit">
+                    <button type="submit" class="btn btn-primary">Send again</button>
+                </form> -->
+                <button type="button" class="submit-btn" data-bs-dismiss="modal">Send again</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <section class="hero container-fluid p-0 m-0">
+        <div class="hero__wrap">
+            <h1 class="main-title">Thoughtful making of space</h1>
+            <p class="hero__text">Discover more</p>
+        </div>
+        <div class="swiper main-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture><source srcset="img/main-img-1.webp" type="image/webp"><img src="img/main-img-1.jpg" alt="interier"></picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture><source srcset="img/main-img-2.webp" type="image/webp"><img src="img/main-img-2.jpg" alt="interier"></picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture><source srcset="img/interier-7.webp" type="image/webp"><img src="img/interier-7.jpg" alt="interier"></picture>
+                </div>
+            </div>
+
+
+            <div class="main-swiper__fraction">
+                <div class="swiper-button-prev"></div>
+                <div class="main-swiper__current">01</div>
+                <div class="swiper-pagination"></div>
+                <div class="main-swiper__total">01</div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+
+        <div class="hero__footer row">
+            <!-- <ul class="socials col p-0">
+                <li class="socials__item">
+                    <a class="socials__link" href="https://www.facebook.com" target="_blank"
+                        rel="noopener noreferrer">Fb</a>
+                </li>
+                <li class="socials__item">
+                    <a class="socials__link" href="https://www.instagram.com" target="_blank"
+                        rel="noopener noreferrer">In</a>
+                </li>
+                <li class="socials__item">
+                    <a class="socials__link" href="https://www.behance.net" target="_blank"
+                        rel="noopener noreferrer">Be</a>
+                </li>
+            </ul> -->
+            <ul class="socials col p-0">
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.facebook.com" target="_blank"
+            rel="noopener noreferrer">Fb</a>
+    </li>
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.instagram.com" target="_blank"
+            rel="noopener noreferrer">In</a>
+    </li>
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.behance.net" target="_blank"
+            rel="noopener noreferrer">Be</a>
+    </li>
+</ul>
+
+
+            <!-- <select class="form-select col">
+                <picture><source srcset="img/main-img-1.webp" type="image/webp"><img src="img/main-img-1.jpg" alt=""></picture>
+                <option selected value="1">Berlin</option>
+                <option value="2">Kyiv</option>
+                <option value="3">Odesa</option>
+            </select> -->
+
+            <div class="input-group col">
+                <label class="input-group-text"><i class="location__icon bi bi-geo-alt-fill"></i></label>
+
+                <select class="form-control selectpicker city-select col" data-live-search="true">
+                    <option selected value="1" data-tokens="berlin">Berlin</option>
+                    <option value="2" data-tokens="kyiv">Kyiv</option>
+                    <option value="3" data-tokens="odesa">Odesa</option>
+                </select>
+
+                <span class="input-group-text downarrow"><i class="bi bi-chevron-down"></i></span>
+
+            </div>
+
+            <!-- <select class="selectpicker countrypicker" data-flag="true" data-default="BE"></select> -->
+
+
+            <div class="contacts col">
+                <a class="phone" href="tel:+380983527547">+380983527547</a>
+                <div class="mail">E:&nbsp;<a href="mailto:info@gmail.com"> info@gmail.com</a></div>
+            </div>
+        </div>
+
+        <div class="next-text">
+            <p class="next-text__page">Next Project</p>
+            <h3 class="next-text__title">Perfect proportions</h3>
+        </div>
+    </section>
+
+
+    <section class="philosophy container-fluid p-0">
+        <div class="philosophy__wrap">
+            <div class="row container-fluid philosophy__first-row">
+                <div class="col philosophy__container">
+                    <div class="col philosophy__about">About</div>
+                    <h2 class="section-title">Company Philosophy</h2>
+                    <p class="philosophy__text philosophy__text_first">The basic philosophy of our studio is to create
+                        individual,
+                        aesthetically stunning solutions for
+                        our
+                        customers by lightning&#8209;fast development of projects employing unique styles and
+                        architecture.
+                        Even
+                        if you don't have a ready sketch of what you want - we will help you get the result.</p>
+                    <p class="philosophy__text philosophy__text_second">We can also help you create harmony out of
+                        seemingly completely
+                        incompatible elements in the
+                        interior
+                        or the exterior design. Do you want to combine classics and abstract art? Modern and retro? Love
+                        everything associated with the 1940's? No problem! </p>
+                    <a class="discover-more" href="#">Discover more</a>
+                </div>
+                <div class="col philosophy__image">
+                    <picture><source srcset="img/interier-3.webp" type="image/webp"><img src="img/interier-3.jpg" alt="interier"></picture>
+                </div>
+            </div>
+
+            <div class="row container-fluid philosophy__second-row">
+                <div class="philosophy__images col">
+                    <div class="philosophy__image">
+                        <picture><source srcset="img/interier-4-2.webp" type="image/webp"><img src="img/interier-4-2.jpg" alt="interier"></picture>
+                    </div>
+                    <picture><source srcset="img/interier-5.webp" type="image/webp"><img src="img/interier-5.jpg" alt="interier"></picture>
+                </div>
+
+                <div class="philosophy__quote col">
+                    <span class="quote__symbol">“</span>
+                    <p class="quote__text">
+
+                        We can also help you create harmony out of seemingly completely
+                        incompatible elements in the interior
+                        or the exterior design.
+                    </p>
+                </div>
+
+                <div class="col philosophy__position">Ceo company</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects container-fluid p-0 m-0">
+        <div class="projects__wrap">
+            <div class="projects__side">Projects</div>
+            <h2 class="section-title">Our Projects</h2>
+            <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+                mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
+            </p>
+
+            <p class="projects__bg-text">We have more 56 project</p>
+            <div class="projects__gallery">
+                <!-- <div class="projects__item">
+                    <div class="projects__info">
+                        <p class="info__text">Lodz</p>
+                        <p class="info__text">16.10.2018</p>
+                        <p class="info__text">80 sq.m</p>
+                    </div>
+                    <picture><source srcset="img/main-img-1.webp" type="image/webp"><img src="img/main-img-1.jpg" alt="interier"></picture>
+                    <p class="projects__discription">Eyewear store interior</p>
+                    <a class="projects__discover" href="#">Discover more</a>
+                </div> -->
+                <!-- <div class="projects__item">
+                    <div class="projects__info">
+                        <p class="info__text">Lodz</p>
+                        <p class="info__text">16.10.2018</p>
+                        <p class="info__text">80 sq.m</p>
+                    </div>
+                    <picture><source srcset="img/interier-6.webp" type="image/webp"><img src="img/interier-6.jpg" alt="interier"></picture>
+                    <p class="projects__discription_f">Residence by the lighthouse</p>
+                    <p class="projects__discription">Minimalist style home</p>
+                    <a class="projects__discover" href="#">Discover more</a>
+                </div> -->
+                <!-- <div class="projects__item">
+                    <div class="projects__info">
+                        <p class="info__text">Lodz</p>
+                        <p class="info__text">16.10.2018</p>
+                        <p class="info__text">80 sq.m</p>
+                    </div>
+                    <picture><source srcset="img/interier-7.webp" type="image/webp"><img src="img/interier-7.jpg" alt="interier"></picture>
+                    <p class="projects__discription">Residence by the lighthouse</p>
+                    <a class="projects__discover" href="#">Discover more</a>
+                </div> -->
+                <!-- <div class="projects__item">
+                    <div class="projects__info">
+                        <p class="info__text">Lodz</p>
+                        <p class="info__text">16.10.2018</p>
+                        <p class="info__text">80 sq.m</p>
+                    </div>
+                    <picture><source srcset="img/interier-8.webp" type="image/webp"><img src="img/interier-8.jpg" alt="interier"></picture>
+                    <p class="projects__discription">Eyewear store interior</p>
+                    <a class="projects__discover" href="#">Discover more</a>
+                </div> -->
+                <div class="projects__item">
+    <div class="projects__info">
+        <p class="info__text">Lodz</p>
+        <p class="info__text">16.10.2018</p>
+        <p class="info__text">80 sq.m</p>
+    </div>
+    <img src=img/main-img-1.jpg alt="interier">
+    <p class="projects__discription_f"></p>
+    <p class="projects__discription">Eyewear store interior</p>
+    <a class="projects__discover" href="project.html">Discover more</a>
+</div>
+                <div class="projects__item">
+    <div class="projects__info">
+        <p class="info__text">Lodz</p>
+        <p class="info__text">16.10.2018</p>
+        <p class="info__text">80 sq.m</p>
+    </div>
+    <img src=img/interier-6.jpg alt="interier">
+    <p class="projects__discription_f">Residence by the lighthouse</p>
+    <p class="projects__discription">Minimalist style home</p>
+    <a class="projects__discover" href="project.html">Discover more</a>
+</div>
+                <div class="projects__item">
+    <div class="projects__info">
+        <p class="info__text">Lodz</p>
+        <p class="info__text">16.10.2018</p>
+        <p class="info__text">80 sq.m</p>
+    </div>
+    <img src=img/interier-7.jpg alt="interier">
+    <p class="projects__discription_f"></p>
+    <p class="projects__discription">Residence by the lighthouse</p>
+    <a class="projects__discover" href="project.html">Discover more</a>
+</div>
+                <div class="projects__item">
+    <div class="projects__info">
+        <p class="info__text">Lodz</p>
+        <p class="info__text">16.10.2018</p>
+        <p class="info__text">80 sq.m</p>
+    </div>
+    <img src=img/interier-8.jpg alt="interier">
+    <p class="projects__discription_f"></p>
+    <p class="projects__discription">Eyewear store interior</p>
+    <a class="projects__discover" href="project.html">Discover more</a>
+</div>
+
+                <div class="projects__item projects__item_last">
+                    <p class="projects__discription">See more 60 projects</p>
+                    <div>
+                        <picture><source srcset="img/interier-8.webp" type="image/webp"><img src="img/interier-8.jpg" alt="interier"></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="request container-fluid p-0 m-0">
+    <div class="request__wrap">
+        <h2 class="visibility-hidden">request</h2>
+        <div class="projects__side">Make request</div>
+
+
+        <div class="text__wrap">
+            <p class="request__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <div class="request__sub-text-wrap">
+                <p class="request__sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                    ullamcorper eu
+                    mauris vitae posuere. Ut
+                    at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+
+                <!-- <button class="request__btn">Make request</button> -->
+                <button class="request__btn">Make request</button>
+            </div>
+        </div>
+        <ul class="request__list">
+            <li class="request__item">
+                <picture><source srcset="img/interier-9.webp" type="image/webp"><img src="img/interier-9.jpg" alt="interier"></picture>
+            </li>
+            <li class="request__item">
+                <picture><source srcset="img/interier-6.webp" type="image/webp"><img src="img/interier-6.jpg" alt="interier"></picture>
+            </li>
+            <li class="request__item">
+                <picture><source srcset="img/interier-7.webp" type="image/webp"><img src="img/interier-7.jpg" alt="interier"></picture>
+            </li>
+            <li class="request__item">
+                <picture><source srcset="img/interier-8.webp" type="image/webp"><img src="img/interier-8.jpg" alt="interier"></picture>
+            </li>
+            <li class="request__item">
+                <picture><source srcset="img/interier-10.webp" type="image/webp"><img src="img/interier-10.jpg" alt="interier"></picture>
+            </li>
+            <li class="request__item">
+                <picture><source srcset="img/interier-9.webp" type="image/webp"><img src="img/interier-9.jpg" alt="interier"></picture>
+            </li>
+            <li class="request__item">
+                <picture><source srcset="img/interier-6.webp" type="image/webp"><img src="img/interier-6.jpg" alt="interier"></picture>
+            </li>
+            <li class="request__item">
+                <picture><source srcset="img/interier-7.webp" type="image/webp"><img src="img/interier-7.jpg" alt="interier"></picture>
+            </li>
+            <li class="request__item">
+                <picture><source srcset="img/interier-8.webp" type="image/webp"><img src="img/interier-8.jpg" alt="interier"></picture>
+            </li>
+            <li class="request__item">
+                <picture><source srcset="img/interier-10.webp" type="image/webp"><img src="img/interier-10.jpg" alt="interier"></picture>
+            </li>
+        </ul>
+</section>
+
+    <section class="gallery container-fluid p-0 m-0">
+    <!-- <h2 class="visibility-hidden">gallery</h2> -->
+    <ul class="gallery__list">
+        <li class="gallery__item">
+            <picture><source srcset="img/interier-4-2.webp" type="image/webp"><img src="img/interier-4-2.jpg" alt="interier"></picture>
+        </li>
+        <li class="gallery__item">
+            <picture><source srcset="img/main-img-1.webp" type="image/webp"><img src="img/main-img-1.jpg" alt="interier"></picture>
+        </li>
+        <li class="gallery__item">
+            <picture><source srcset="img/interier-10.webp" type="image/webp"><img src="img/interier-10.jpg" alt="interier"></picture>
+        </li>
+        <li class="gallery__item">
+            <picture><source srcset="img/interier-3-2.webp" type="image/webp"><img src="img/interier-3-2.jpg" alt="interier"></picture>
+        </li>
+        <li class="gallery__item">
+            <picture><source srcset="img/interier-12.webp" type="image/webp"><img src="img/interier-12.jpg" alt="interier"></picture>
+        </li>
+        <li class="gallery__item">
+            <picture><source srcset="img/interier-11.webp" type="image/webp"><img src="img/interier-11.jpg" alt="interier"></picture>
+        </li>
+        <li class="gallery__item">
+            <picture><source srcset="img/interier-7.webp" type="image/webp"><img src="img/interier-7.jpg" alt="interier"></picture>
+        </li>
+        <li class="gallery__item">
+            <picture><source srcset="img/interier-5.webp" type="image/webp"><img src="img/interier-5.jpg" alt="interier"></picture>
+        </li>
+    </ul>
+    <div class="gallery__wrap">
+        <h2 class="gallery__name">@lorem.ipsum</h2>
+        <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+            mauris vitae posuere.
+        </p>
+    </div>
+</section>
+
+
+    <section class="main-footer container-fluid p-0 m-0">
+        <div class="projects__side">Contacts</div>
+        <div class="main-footer__wrap">
+            <h2 class="section-title">Drop us a line</h2>
+            <p class="main-footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+                mauris vitae posuere.
+            </p>
+
+            <div class="main-footer__info">
+                <ul class="city-contact__list">
+                    <!-- <li class="city-contact__itam">
+                        <h3 class="city">Kyiv</h3>
+                        <a class="tel" href="tel:+2095550104">(209) 555-0104</a>
+                        <a class="address"
+                            href="https://www.google.com/maps/search/6391+Elgin+St.+Celina,Delaware+10299/@39.143909,-75.9470942,9z/data=!3m1!4b1">
+                            6391 Elgin St. Celina,
+                            Delaware 10299
+                        </a>
+                    </li> -->
+
+                    <li class="city-contact__itam">
+    <h3 class="city">Kyiv</h3>
+    <a target="_blank" class="tel" href="tel:+2095550104">(209) 555-0104</a>
+    <a target="_blank" class="address" href="https://www.google.com/maps/search/6391+Elgin+St.+Celina,Delaware+10299/@39.143909,-75.9470942,9z/data=!3m1!4b1">
+        6391 Elgin St. Celina, Delaware 10299
+    </a>
+</li>
+
+                    <li class="city-contact__itam">
+    <h3 class="city">Lviv</h3>
+    <a target="_blank" class="tel" href="tel:+2095550104">(209) 555-0104</a>
+    <a target="_blank" class="address" href="https://www.google.com/maps/search/6391+Elgin+St.+Celina,Delaware+10299/@39.143909,-75.9470942,9z/data=!3m1!4b1">
+        6391 Elgin St. Celina, Delaware 10299
+    </a>
+</li>
+                    <li class="city-contact__itam">
+    <h3 class="city">Kharkiv</h3>
+    <a target="_blank" class="tel" href="tel:+2095550104">(209) 555-0104</a>
+    <a target="_blank" class="address" href="https://www.google.com/maps/search/6391+Elgin+St.+Celina,Delaware+10299/@39.143909,-75.9470942,9z/data=!3m1!4b1">
+        6391 Elgin St. Celina, Delaware 10299
+    </a>
+</li>
+                </ul>
+
+                <div class="socials-web">
+                    <a class="socials-mail" href="mailto:info@gmail.com">info@gmail.com</a>
+                    <ul class="socials col p-0">
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.facebook.com" target="_blank"
+            rel="noopener noreferrer">Fb</a>
+    </li>
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.instagram.com" target="_blank"
+            rel="noopener noreferrer">In</a>
+    </li>
+    <li class="socials__item">
+        <a class="socials__link" target="_blank" href="https://www.behance.net" target="_blank"
+            rel="noopener noreferrer">Be</a>
+    </li>
+</ul>
+                </div>
+            </div>
+
+            <button class="request__btn">Make request</button>
+        </div>
+        <footer id='footer' class="container-fluid footer p-0">
+    <div class="footer__wrap">
+        <p class="footer__text">© Copyright 2018. All rights reserved</p>
+        <div class="footer__right">
+            <p class="footer__text">Made with love in</p>
+
+            <div class="footer__logo">
+                <p class="first">The First</p>
+                <p class="last">The Last.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    </section>
+
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230503174930"></script>
+
+    <!-- bootstrap-select-country -->
+    <!-- <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js?_v=20230503174930"></script>
+    <script src="https://unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js?_v=20230503174930"></script>
+    <script src="https://unpkg.com/bootstrap-select@1.12.4/dist/js/bootstrap-select.min.js?_v=20230503174930"></script>
+    <script src="https://unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js?_v=20230503174930"></script> -->
+
+
+    <script src="scripts/main.min.js?_v=20230503174930"></script>
+</body>
+
+</html>
