@@ -24,13 +24,13 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
 
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   .close-btn {
     background: transparent;
     border: none;
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 27px;
   }
 
@@ -67,7 +67,7 @@
     text-align: right;
     letter-spacing: 0.06em;
 
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   .send-button {
@@ -86,7 +86,7 @@
 
     text-align: right;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: #ffffff !important;
 
     &_s {
       display: none;
@@ -112,7 +112,7 @@
         font-size: 32px;
         line-height: 39px;
 
-        color: #ffffff;
+        color: #ffffff !important;
 
         opacity: 0.5;
 

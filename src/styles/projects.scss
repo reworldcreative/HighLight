@@ -29,6 +29,23 @@
     }
   }
 
+  .menu {
+    .logo,
+    .navigation__link,
+    .form-select,
+    .send-button {
+      color: #ffffff !important;
+    }
+
+    .send-button {
+      border: 1px solid #ffffff;
+    }
+
+    .navbar__icon {
+      background-color: #ffffff;
+    }
+  }
+
   .projectsPage {
     &__wrap {
       margin: 108px 64px 0px 62px;
@@ -186,7 +203,7 @@
           width: auto;
 
           .projects__discription {
-            letter-spacing: 1.5px;
+            // letter-spacing: 1.5px;
             bottom: 29px;
           }
           .projects__discover {
@@ -215,10 +232,11 @@
       }
 
       .projects__discription {
+        font-family: "Montserrat";
         font-size: 20px;
         line-height: 126%;
-        letter-spacing: 1.2px;
-        bottom: 75px;
+        // letter-spacing: 1.2px;
+        bottom: 73px;
         left: 33px;
       }
 
@@ -227,7 +245,10 @@
       }
 
       .nav-item {
-        margin-right: 34px;
+        &:first-child {
+          margin-right: 33px;
+        }
+        margin-right: 36px;
       }
 
       .nav-link {
@@ -243,6 +264,10 @@
 
     .request__wrap {
       padding: 122px 0px 128px;
+    }
+
+    .footer__wrap {
+      padding: 0 56px 32px 56px;
     }
   }
   @media screen and (max-width: 1023px) {
@@ -282,6 +307,7 @@
 
       .projects__discription {
         width: 234px;
+        bottom: 65px;
       }
       .projects__item {
         width: 100%;
@@ -308,6 +334,10 @@
       &__text {
         width: 455px;
       }
+    }
+
+    .footer__wrap {
+      padding: 0 49px 32px 48px;
     }
   }
 
@@ -450,9 +480,23 @@
       }
     }
 
-    .footer__right {
-      bottom: 5px;
-      margin-left: 4px;
+    .footer__wrap {
+      padding: 0 12px 32px 24px;
+    }
+    .footer {
+      &__right {
+        bottom: 5px;
+        margin-left: 4px;
+      }
+      &__logo {
+        .last {
+          left: -7px;
+        }
+
+        .first {
+          left: -5px;
+        }
+      }
     }
   }
 
@@ -479,8 +523,8 @@
 
   .main-section {
     background: url("../img/interier-13-2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     position: relative;
 
     &__wrap {
@@ -618,8 +662,7 @@
       }
     }
     .main-section {
-      // background-size: cover;
-      background-size: 100% 100%;
+      background-size: cover;
       &__wrap {
         padding: 277px 270px 368px 124px;
       }

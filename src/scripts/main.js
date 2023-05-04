@@ -2,6 +2,20 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
+function closemenu() {
+  document.body.classList.remove("stopscroll");
+  document.getElementById("menu").style.display = "none";
+}
+
+function openmenu() {
+  document.body.classList.add("stopscroll");
+  document.getElementById("menu").style.display = "block";
+}
+const elclose = document.getElementById("close-btn");
+elclose.addEventListener("click", closemenu);
+const elopen = document.getElementById("openmenu");
+elopen.addEventListener("click", openmenu);
+
 function select() {
   $(".news-dropdown-item").click(function () {
     $(".news-dropdown-btn").html($(this).text());
@@ -112,12 +126,12 @@ const aboutSwiper = new Swiper(".about-swiper", {
   spaceBetween: 13,
   // loop: true,
 
-  breakpoints: {
-    300: {
-      // slidesPerView: 1.2,
-      // spaceBetween: 26,
-    },
-  },
+  // breakpoints: {
+  //   300: {
+  //     slidesPerView: 1.2,
+  //     spaceBetween: 26,
+  //   },
+  // },
 
   // Navigation arrows
   // navigation: {
@@ -182,22 +196,8 @@ aboutSwiper.on("slideChange", function () {
 //   $(".selectpicker").selectpicker();
 // });
 
-function closemenu() {
-  document.body.classList.remove("stopscroll");
-  document.getElementById("menu").style.display = "none";
-}
-
-function openmenu() {
-  document.body.classList.add("stopscroll");
-  document.getElementById("menu").style.display = "block";
-}
-const elclose = document.getElementById("close-btn");
-elclose.addEventListener("click", closemenu);
-const elopen = document.getElementById("openmenu");
-elopen.addEventListener("click", openmenu);
-
 document.getElementById("form-submit").addEventListener("click", function (e) {
-  $("#interierModal").hide();
-  $("#successModal").modal("show");
+  // $("#interierModal").hide();
+  // $("#successModal").modal("show");
   // e.preventDefault();
 });
