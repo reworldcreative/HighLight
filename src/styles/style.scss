@@ -1855,13 +1855,16 @@ $main: #ffffff;
     }
   }
 }
-
+input:invalid {
+  border: 2px dashed red;
+}
 .request {
   background: radial-gradient(50% 50% at 50% 50%, #0f0f0f 0%, #080808 100%);
   margin-top: -1px !important;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
+  overflow: hidden;
   &__wrap {
     padding: 111px 197px 180px;
     position: relative;

@@ -29,7 +29,8 @@
                             <label for="floatingInput">Email address</label>
                         </div> -->
                         <div class="form-group">
-                            <input type="email" class="form-control" id="EmailInputModal" placeholder="Email">
+                            <input type="email" class="form-control" id="EmailInputModal" placeholder="Email"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninput="this.reportValidity()">
                         </div>
                         <div class="form-group">
                             <select class="form-select" aria-label="Property type">

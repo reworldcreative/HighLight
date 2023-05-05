@@ -116,8 +116,8 @@ requestanim.addEventListener("mouseout", () => {
 
 document.addEventListener("mousemove", function (evt) {
   gsap.to(".request__item._anim", {
-    x: evt.clientX,
-    y: evt.clientY,
+    x: evt.clientX - 300,
+    y: evt.clientY - 300,
     stagger: -0.1,
   });
 });
@@ -259,5 +259,6 @@ aboutSwiper.on("slideChange", function () {
 document.getElementById("form-submit").addEventListener("click", function (e) {
   // $("#interierModal").hide();
   // $("#successModal").modal("show");
+  e.submit();
   // e.preventDefault();
 });
