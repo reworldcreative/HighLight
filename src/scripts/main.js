@@ -103,24 +103,26 @@ if (animItems.length > 0) {
 }
 
 let requestanim = document.getElementById("requestanim");
-let requestitem = document.querySelectorAll(".request__item");
-requestanim.addEventListener("mouseover", () => {
-  requestitem.forEach((element) => element.classList.remove("_anim-stop"));
-  requestitem.forEach((element) => element.classList.add("_anim"));
-});
-
-requestanim.addEventListener("mouseout", () => {
-  requestitem.forEach((element) => element.classList.remove("_anim"));
-  requestitem.forEach((element) => element.classList.add("_anim-stop"));
-});
-
-document.addEventListener("mousemove", function (evt) {
-  gsap.to(".request__item._anim", {
-    x: evt.clientX - 300,
-    y: evt.clientY - 300,
-    stagger: -0.1,
+if (requestanim) {
+  let requestitem = document.querySelectorAll(".request__item");
+  requestanim.addEventListener("mouseover", () => {
+    requestitem.forEach((element) => element.classList.remove("_anim-stop"));
+    requestitem.forEach((element) => element.classList.add("_anim"));
   });
-});
+
+  requestanim.addEventListener("mouseout", () => {
+    requestitem.forEach((element) => element.classList.remove("_anim"));
+    requestitem.forEach((element) => element.classList.add("_anim-stop"));
+  });
+
+  document.addEventListener("mousemove", function (evt) {
+    gsap.to(".request__item._anim", {
+      x: evt.clientX - 300,
+      y: evt.clientY - 300,
+      stagger: -0.1,
+    });
+  });
+}
 
 const mainSwiper = new Swiper(".main-swiper", {
   //   slidesPerView: 1.174,
@@ -259,6 +261,6 @@ aboutSwiper.on("slideChange", function () {
 document.getElementById("form-submit").addEventListener("click", function (e) {
   // $("#interierModal").hide();
   // $("#successModal").modal("show");
-  e.submit();
+  // e.submit();
   // e.preventDefault();
 });
