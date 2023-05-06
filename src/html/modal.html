@@ -11,17 +11,24 @@
                 <div class="modal-body">
                     <form class="modal__form">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="NameInputModal" placeholder="Name">
+                            <input type="text" class="form-control" id="NameInputModal" placeholder="Name"
+                                pattern="([a-z]|\W)+" oninput="this.reportValidity()" title="Please enter only letters">
+                            <!-- <input type="text" class="form-control" id="NameInputModal" placeholder="Name"
+                                pattern="([a-z]|\W)+" oninput="this.reportValidity()"
+                                oninvalid="setCustomValidity('Please enter only letters')"> -->
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="LastnameInputModal" placeholder="Last name">
+                            <input type="text" class="form-control" id="LastnameInputModal" placeholder="Last name"
+                                pattern="([a-z]|\W)+" oninput="this.reportValidity()" title="Please enter only letters">
                         </div>
 
                         <div class="form-group">
-                            <input type="tel" class="form-control" id="PhoneInputModal" placeholder="Phone">
+                            <input type="tel" class="form-control" id="PhoneInputModal" placeholder="Phone"
+                                pattern="\d{10}" oninput="this.reportValidity()" title="Please enter 10 characters">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="CityInputModal" placeholder="Your city">
+                            <input type="text" class="form-control" id="CityInputModal" placeholder="Your city"
+                                pattern="([a-z]|\W)+" oninput="this.reportValidity()" title="Please enter only letters">
                         </div>
 
                         <!-- <div class="form-floating">
