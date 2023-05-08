@@ -594,9 +594,10 @@ $main: #ffffff;
 }
 
 @media screen and (max-width: 350px) {
-  .hero {
+  .hero { 
     .main-title {
       width: 100%;
+      font-size: 32px;
     }
 
     .next-text {
@@ -611,6 +612,10 @@ $main: #ffffff;
 
     .contacts {
       margin-left: 10px;
+    }
+
+    &__footer{
+      margin-right: 10px;
     }
   }
 }
@@ -1172,6 +1177,7 @@ $main: #ffffff;
   }
 }
 
+
 @media screen and (max-width: 377px) {
   .philosophy {
     .section-title {
@@ -1233,7 +1239,7 @@ $main: #ffffff;
       .philosophy__image {
         &:last-child {
           width: auto;
-          height: auto;
+          height: 100%;
         }
       }
     }
@@ -1837,7 +1843,26 @@ $main: #ffffff;
   }
 }
 
-@media screen and (max-width: 400px) {
+// @media screen and (max-width: 400px) {
+//   .projects {
+//     &__item {
+//       width: 327px;
+//       height: 327px;
+//       &_last {
+//         > div {
+//           width: 121px;
+//           height: 161px;
+//         }
+
+//         .projects__discription {
+//           margin-bottom: 15px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media screen and (max-width: 380px) {
   .projects {
     &__item {
       width: 327px;
@@ -1850,11 +1875,13 @@ $main: #ffffff;
 
         .projects__discription {
           margin-bottom: 15px;
+          text-align: center;
         }
       }
     }
   }
 }
+
 input:invalid {
   border: 2px dashed red;
 }

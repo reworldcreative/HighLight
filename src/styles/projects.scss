@@ -500,6 +500,17 @@
     }
   }
 
+  @media screen and (max-width: 350px) {
+
+    .projectsPage {
+      .projects__item:nth-child(3n) {
+        .projects__discover {
+          bottom: 23px;
+        }
+      }
+    }
+  }
+
   .request {
     background: #fff;
     color: #080808;
